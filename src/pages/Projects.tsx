@@ -42,6 +42,19 @@ const Projects: React.FC = () => {
       status: "Ongoing",
     },
     {
+      id: 27,
+      title:
+        "Architecture & Engineering for Sindh Basic Education Program (SBEP)",
+      category: "Construction Management",
+      location: "Karachi, Sindh",
+      duration: "2012-2025",
+      client: "USAID",
+      image: "SBEP.jpg",
+      description:
+        "Delivered architectural and engineering design services for modern, sustainable schools under the Sindh Basic Education Program (SBEP).",
+      status: "Completed",
+    },
+    {
       id: 19,
       title:
         "Project Management and Resident Supervision Services for Construction of Serena Hotel Hunza",
