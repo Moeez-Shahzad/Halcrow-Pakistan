@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
     "Education",
     "Livelihoods",
     "Agriculture",
-    "International",
+    "Environmental Services",
   ];
 
   const projects = [
@@ -66,6 +66,19 @@ const Projects: React.FC = () => {
       image: "Serena-Hunza.jpg",
       description:
         "Provided project management and resident supervision services, ensuring high-quality construction standards and on-time completion of the hotel project.",
+      status: "Ongoing",
+    },
+    {
+      id: 18,
+      title:
+        "Provision of Occupational Health and Safety (OHS) Services to Strengthen In-House OHS Capacities and Capabilities of Dasu Hydropower Consultants",
+      category: "Environmental Services",
+      location: " Khyber Pakhtunkhwa province, Pakistan",
+      duration: "2019-Ongoing",
+      client: "Dasu Hydropower Consultants",
+      image: "DASU.jpg",
+      description:
+        "Providing specialized Occupational Health and Safety (OHS) services to enhance the internal safety management systems and build the in-house OHS capacity of Dasu Hydropower Consultants.",
       status: "Ongoing",
     },
     {
@@ -184,7 +197,7 @@ const Projects: React.FC = () => {
     {
       id: 8,
       title: "Neelum & Jhelum Valleys Community Development Project",
-      category: "International",
+      category: "Environmental Services",
       location: "AJK (Cross-border involvement)",
       duration: "2017-2020",
       client: "Community Development Board",
