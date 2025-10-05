@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
       client: "South Asia Pakistan Terminals (SAPT)",
       image: "Port.jpg",
       description:
-        "A modern port facility designed to handle large cargo vessels and boost Pakistan’s trade capacity.",
+        "A modern port facility designed to handle large cargo vessels and boost Pakistan's trade capacity.",
       status: "Completed",
     },
     {
@@ -407,7 +407,7 @@ const Projects: React.FC = () => {
       </section>
 
       {/* Project Stats */}
-      <section className="py-16 bg-blue-600 dark:bg-blue-900 text-white">
+      {/* <section className="py-16 bg-blue-600 dark:bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -418,7 +418,7 @@ const Projects: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -427,9 +427,9 @@ const Projects: React.FC = () => {
             >
               <div className="text-4xl font-bold mb-2">500+</div>
               <p className="text-blue-100">Projects Completed</p>
-            </motion.div>
+            </motion.div> */}
             
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -437,9 +437,9 @@ const Projects: React.FC = () => {
             >
               <div className="text-4xl font-bold mb-2">50M+</div>
               <p className="text-blue-100">People Served</p>
-            </motion.div>
+            </motion.div> */}
             
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -447,9 +447,9 @@ const Projects: React.FC = () => {
             >
               <div className="text-4xl font-bold mb-2">$5B+</div>
               <p className="text-blue-100">Project Value</p>
-            </motion.div>
-            
-            <motion.div
+            </motion.div> */}
+            x
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -457,10 +457,10 @@ const Projects: React.FC = () => {
             >
               <div className="text-4xl font-bold mb-2">100%</div>
               <p className="text-blue-100">Client Satisfaction</p>
-            </motion.div>
+            </motion.div> }
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
