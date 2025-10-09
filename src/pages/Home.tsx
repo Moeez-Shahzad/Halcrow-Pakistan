@@ -100,7 +100,7 @@ const clients = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Halcrow Pakistan (est. 1993 by Halcrow Group UK) is a leading
+            Halcrow Pakistan (est. 1993) is a leading
             independent engineering consultancy with 30+ years of experience in
             multidisciplinary projects in Pakistan and abroad.
           </motion.p>
