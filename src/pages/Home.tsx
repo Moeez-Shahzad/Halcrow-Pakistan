@@ -91,7 +91,7 @@ const clients = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Han G Abdul Rehman sunao kia haal ha 
+            Yasir bhai eik sawal puchon bura to nahi manao ga 
             {/* Engineering Excellence Since 1993 */}
           </motion.h1>
 
