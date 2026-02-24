@@ -91,8 +91,8 @@ const clients = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Yasir bhai eik sawal puchon bura to nahi manao ga 
-            {/* Engineering Excellence Since 1993 */}
+            {/* Yasir bhai eik sawal puchon bura to nahi manao ga  */}
+            Engineering Excellence Since 1993
           </motion.h1>
 
           <motion.p
