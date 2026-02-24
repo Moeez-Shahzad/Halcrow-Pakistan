@@ -91,7 +91,8 @@ const clients = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Engineering Excellence Since 1993
+            Han G Abdul Rehman sunao kia haal ha 
+            {/* Engineering Excellence Since 1993 */}
           </motion.h1>
 
           <motion.p
