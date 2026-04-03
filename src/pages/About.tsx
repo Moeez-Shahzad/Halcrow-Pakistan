@@ -96,7 +96,7 @@ const ceoMessage = {
 
   const offices = [
     { city: 'Islamabad', type: 'Headquarters', coordinates: [33.6844, 73.0479] },
-    { city: 'Karachi', type: 'Branch Office', coordinates: [24.8607, 67.0011] },
+    // { city: 'Karachi', type: 'Branch Office', coordinates: [24.8607, 67.0011] },
     // { city: 'Lahore', type: 'Regional Office', coordinates: [31.5204, 74.3587] },
     // { city: 'Peshawar', type: 'Field Office', coordinates: [34.0151, 71.5249] },
     // { city: 'Sukkur', type: 'Project Office', coordinates: [27.7058, 68.8574] },
