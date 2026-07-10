@@ -30,16 +30,16 @@ const Contact: React.FC = () => {
       hours: "Mon - Fri: 9:00 AM - 6:00 PM",
       type: "headquarters",
     },
-    {
-      name: "Karachi Branch",
-      address:
-        "Business Enclave, 12th Commercial Street, DHA Phase II Extension, Karachi",
-      phone: "+92 (21) 3531 7770",
-      email: "hpkmail@halcrowpk.com",
-      Fax: "+92 (21) 3531 0771",
-      hours: "Mon - Fri: 9:00 AM - 6:00 PM",
-      type: "branch",
-    },
+    // {
+    //   name: "Karachi Branch",
+    //   address:
+    //     "Business Enclave, 12th Commercial Street, DHA Phase II Extension, Karachi",
+    //   phone: "+92 (21) 3531 7770",
+    //   email: "hpkmail@halcrowpk.com",
+    //   Fax: "+92 (21) 3531 0771",
+    //   hours: "Mon - Fri: 9:00 AM - 6:00 PM",
+    //   type: "branch",
+    // },
   ];
 
   const contactReasons = [
