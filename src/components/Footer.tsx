@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
                 />
                 <div className="text-sm text-gray-400">
                   <p>Islamabad (HQ)</p>
-                  <p>Karachi Branch</p>
+                  {/* <p>Karachi Branch</p> */}
                 </div>
               </div>
               <div className="flex items-center space-x-3">
