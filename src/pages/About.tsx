@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Target, 
-  Eye, 
-  Heart, 
-  Users, 
-  MapPin, 
+import {
+  Target,
+  Eye,
+  Heart,
+  Users,
+  MapPin,
   Calendar,
   Award,
   Globe2,
@@ -33,7 +33,7 @@ const About: React.FC = () => {
         "Expanded to offices in Islamabad, Karachi, Lahore, Peshawar, Sukkur, and Swat, employing over 200 professionals and delivering projects for global clients and local authorities.",
     },
     {
-      year: "2011",
+      year: "2013",
       title: "Transition",
       description:
         "Following the acquisition of Halcrow Group by CH2M HILL, HPK continued operations as an independent company, retaining its local identity and international expertise.",
@@ -45,7 +45,7 @@ const About: React.FC = () => {
         "With 30+ years of experience, HPK stands as a leading independent engineering consultancy, committed to sustainable solutions, innovation, and improving quality of life for communities across Pakistan and beyond.",
     },
   ];
-  
+
 
   const leadership = [
     {
@@ -56,7 +56,7 @@ const About: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/umumtaz66/?originalSubdomain=pk",
     },
 
-    
+
     // {
     //   name: "ABC",
     //   position: "ABC",
@@ -79,20 +79,20 @@ const About: React.FC = () => {
     //   linkedin: "#",
     // },
   ];
-const ceoMessage = {
-  title: "Message from Our CEO",
-  name: "Usman Mumtaz",
-  position: "Chief Executive Officer",
-  image:
-    "https://media.licdn.com/dms/image/v2/C5603AQGSK6hU73qYaQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517704797948?e=2147483647&v=beta&t=IfU1nqLNURNKwFV6TB3_PMkVzgFyMVIQ5q4IcKt_Fzw",
-  message: `For over 30 years, HPK has grown steadily in both local and international markets, guided by a strong ethical approach to our work. 
+  const ceoMessage = {
+    title: "Message from Our CEO",
+    name: "Usman Mumtaz",
+    position: "Chief Executive Officer",
+    image:
+      "https://media.licdn.com/dms/image/v2/C5603AQGSK6hU73qYaQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517704797948?e=2147483647&v=beta&t=IfU1nqLNURNKwFV6TB3_PMkVzgFyMVIQ5q4IcKt_Fzw",
+    message: `For over 30 years, HPK has grown steadily in both local and international markets, guided by a strong ethical approach to our work. 
   Our purpose is simple yet profound: “to sustain and improve the quality of people's lives.”
 
   We value new ideas, encourage contributions from our employees, and believe that respect and teamwork form the foundation of every great company. 
   With integrity, leadership, and collaboration, we aim to remain a trusted partner to our clients while shaping a better tomorrow.`,
-};
+  };
 
-  
+
 
   const offices = [
     { city: 'Islamabad', type: 'Headquarters', coordinates: [33.6844, 73.0479] },
@@ -262,18 +262,16 @@ const ceoMessage = {
             {timeline.map((item, index) => (
               <motion.div
                 key={item.year}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? "justify-start" : "justify-end"
-                }`}
+                className={`relative flex items-center mb-12 ${index % 2 === 0 ? "justify-start" : "justify-end"
+                  }`}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <div
-                  className={`w-5/12 ${
-                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
-                  }`}
+                  className={`w-5/12 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                    }`}
                 >
                   <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                     <div className="flex items-center mb-2">
