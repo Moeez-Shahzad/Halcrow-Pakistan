@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Filter, 
-  MapPin, 
-  Calendar, 
-  User, 
+import {
+  Filter,
+  MapPin,
+  Calendar,
+  User,
   ExternalLink,
   Building2,
   Car,
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title:
-        "Project Management and Resident Supervision Services for Construction of Serena Hotel Sost",
+        "Sost Serena Hotel - Project Management and Resident Supervision Services",
       category: "Construction Management",
       location: "Gilgit Baltistan, Sost",
       duration: "2022-Ongoing",
@@ -44,29 +44,29 @@ const Projects: React.FC = () => {
     {
       id: 27,
       title:
-        "Architecture & Engineering for Sindh Basic Education Program (SBEP)",
+        "Architecture & Engineering Services for Sindh Basic Education Program (SBEP)",
       category: "Construction Management",
       location: "Karachi, Sindh",
       duration: "2012-2025",
       client: "USAID",
       image: "SBEP.jpg",
       description:
-        "Delivered architectural and engineering design services for modern, sustainable schools under the Sindh Basic Education Program (SBEP).",
+        "Delivered architectural and engineering design and construction management services for modern, sustainable schools under the Sindh Basic Education Program (SBEP).",
       status: "Completed",
     },
     {
       id: 19,
       title:
-        "Project Management and Resident Supervision Services for Construction of Serena Hotel Hunza",
+        "Hunza Serena Hotel - Project Management and Resident Supervision Services",
       category: "Construction Management",
       location: "Gilgit Baltistan, Hunza",
-      duration: "2022-Ongoing",
+      duration: "2022-2025",
       client:
         "Serena Hotels, Tourism Promotion Services (TPS), Agha Khan Group",
       image: "Serena-Hunza.jpg",
       description:
         "Provided project management and resident supervision services, ensuring high-quality construction standards and on-time completion of the hotel project.",
-      status: "Ongoing",
+      status: "Completed",
     },
     {
       id: 18,
@@ -246,8 +246,8 @@ const Projects: React.FC = () => {
       status: "Completed",
     },
   ];
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
+  const filteredProjects = activeFilter === 'All'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   const getCategoryIcon = (category: string) => {
@@ -295,17 +295,16 @@ const Projects: React.FC = () => {
               <Filter className="w-5 h-5 text-gray-600 dark:text-gray-400 mr-2" />
               <span className="text-gray-700 dark:text-gray-300 font-medium">Filter by:</span>
             </div>
-            
+
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveFilter(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    activeFilter === category
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700'
-                  }`}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeFilter === category
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-700'
+                    }`}
                 >
                   {category}
                 </button>
@@ -318,13 +317,13 @@ const Projects: React.FC = () => {
       {/* Projects Grid */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             layout
           >
             {filteredProjects.map((project, index) => {
               const CategoryIcon = getCategoryIcon(project.category);
-              
+
               return (
                 <motion.div
                   key={project.id}
@@ -341,11 +340,10 @@ const Projects: React.FC = () => {
                       className="w-full h-48 object-cover"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.status === 'Completed'
-                          ? 'bg-green-100 text-green-800'
-                          : 'bg-blue-100 text-blue-800'
-                      }`}>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'Completed'
+                        ? 'bg-green-100 text-green-800'
+                        : 'bg-blue-100 text-blue-800'
+                        }`}>
                         {project.status}
                       </span>
                     </div>
@@ -355,22 +353,22 @@ const Projects: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="p-6">
                     <div className="mb-2">
                       <span className="text-sm text-blue-600 dark:text-blue-400 font-medium">
                         {project.category}
                       </span>
                     </div>
-                    
+
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                       {project.title}
                     </h3>
-                    
+
                     <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
                       {project.description}
                     </p>
-                    
+
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
                         <MapPin className="w-4 h-4 mr-2" />
@@ -385,7 +383,7 @@ const Projects: React.FC = () => {
                         {project.client}
                       </div>
                     </div>
-                    
+
                     {/* <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-colors flex items-center justify-center group">
                       View Details
                       <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -395,7 +393,7 @@ const Projects: React.FC = () => {
               );
             })}
           </motion.div>
-          
+
           {filteredProjects.length === 0 && (
             <div className="text-center py-12">
               <p className="text-gray-500 dark:text-gray-400 text-lg">
@@ -428,8 +426,8 @@ const Projects: React.FC = () => {
               <div className="text-4xl font-bold mb-2">500+</div>
               <p className="text-blue-100">Projects Completed</p>
             </motion.div> */}
-            
-            {/* <motion.div
+
+      {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -438,8 +436,8 @@ const Projects: React.FC = () => {
               <div className="text-4xl font-bold mb-2">50M+</div>
               <p className="text-blue-100">People Served</p>
             </motion.div> */}
-            
-            {/* <motion.div
+
+      {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -448,8 +446,8 @@ const Projects: React.FC = () => {
               <div className="text-4xl font-bold mb-2">$5B+</div>
               <p className="text-blue-100">Project Value</p>
             </motion.div> */}
-            x
-            {/* <motion.div
+      x
+      {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}

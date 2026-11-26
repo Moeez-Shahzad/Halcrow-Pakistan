@@ -34,17 +34,13 @@ const Services: React.FC = () => {
         "Ground retention systems",
       ],
       projects: [
-        "High-Rise Building Projects",
-        "Educational Building Projects (Universities, Schools, Hostels)",
-        "Commercial & Residential Complex Projects",
-        "Hospital Infrastructure Projects",
-        "Industrial Process Plant Projects (Steel, Oil & Gas)",
-        "Heavy Machine Foundation Projects",
-        "Warehouse Construction Projects",
-        "Car Park Facility Projects",
-        "Sewage Treatment Plant Projects",
-        "Electrical Sub-Station Projects",
-        "Ground Retention System Projects",
+        "High-Rise Buildings",
+        "Educational Buildings (Universities, Schools, Hostels)",
+        "Commercial & Residential Complexes",
+        "Hospital Infrastructure",
+        "Warehouses",
+        "Electrical Sub-Stations",
+        "Ground Retention Systems",
       ],
     },
     {
@@ -74,17 +70,17 @@ const Services: React.FC = () => {
         "Geographical information System (GIS)",
       ],
       projects: [
-        "Environmental Impact Assessment (EIA) Projects",
-        "Initial Environmental Examination (IEE) Projects",
-        "Strategic Environmental Assessment (SEA) Projects",
-        "Environmental Audit Projects",
-        "Risk Assessment Projects",
+        "Environmental Impact Assessments (EIA)",
+        "Initial Environmental Examinations (IEE)",
+        "Strategic Environmental Assessments (SEA)",
+        "Environmental Audits",
+        "Risk Assessments",
         "Air Dispersion Modelling Studies",
         "Accidental Release Modelling Studies",
-        "GIS Mapping & Analysis Projects",
-        "Pollution Control & Process Evaluation Projects",
-        "Baseline Environmental Study Projects",
-        "Environmental Due Diligence Projects",
+        "GIS Mapping & Analysis",
+        "Pollution Control & Process Evaluation",
+        "Baseline Environmental Studies",
+        "Environmental Due Diligence",
         "Site Remediation & Waste Disposal Projects",
       ],
     },
@@ -275,11 +271,10 @@ const Services: React.FC = () => {
               <button
                 key={service.title}
                 onClick={() => setActiveTab(index)}
-                className={`flex items-center px-6 py-3 m-1 rounded-t-lg transition-colors ${
-                  activeTab === index
-                    ? 'bg-blue-600 text-white border-b-2 border-blue-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
+                className={`flex items-center px-6 py-3 m-1 rounded-t-lg transition-colors ${activeTab === index
+                  ? 'bg-blue-600 text-white border-b-2 border-blue-600'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400'
+                  }`}
               >
                 <service.icon className="w-5 h-5 mr-2" />
                 <span className="hidden sm:inline">{service.title}</span>

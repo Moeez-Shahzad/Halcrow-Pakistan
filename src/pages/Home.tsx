@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  Building2, 
-  Leaf, 
-  Car, 
-  Droplets, 
-  MapPin, 
+import {
+  Building2,
+  Leaf,
+  Car,
+  Droplets,
+  MapPin,
   Users,
   ArrowRight,
   Award,
@@ -49,25 +49,26 @@ const Home: React.FC = () => {
     // }
   ];
 
-const clients = [
-  "World Bank",
-  "Asian Development Bank",
-  "JICA",
-  "USAID",
-  "Government of Pakistan",
-  "Provincial Governments",
-  "MARI Energies",
-  "Pakistan Petroleum Limited",
-  "Pakistan Oil Fields Limited",
-  "Orient Petroleum",
-  "DASU Hydropower Consultants",
-  "Oil and Gas Development Company Limited",
-  "CDM Smith",
-  "Mott McDonald's",
-  "Polish Oil and Gas Company",
-  "Emaar",
-  "IBA Karachi",
-];
+  const clients = [
+    "The World Bank",
+    "Asian Development Bank",
+    "JICA",
+    "USAID",
+    "MARI Energies",
+    "Pakistan Petroleum Limited",
+    "Pakistan Oil Fields Limited",
+    "Orient Petroleum",
+    "DASU Hydropower Consultants",
+    "Oil and Gas Development Company Limited",
+    "CDM Smith",
+    "Mott McDonald International",
+    "Polish Oil and Gas Company",
+    "Emaar Pakistan",
+    "IBA Karachi",
+    "FC College Lahore",
+    "Serena Hotels",
+    "Agha Khan Education Services"
+  ];
 
 
   return (
@@ -79,8 +80,8 @@ const clients = [
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-            "Home.png"
-              // 'url("https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")',
+              "Home.png"
+            // 'url("https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")',
           }}
         ></div>
 
@@ -101,7 +102,7 @@ const clients = [
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Halcrow Pakistan (est. 1993) is a leading
+            Halcrow Pakistan is a leading
             independent engineering consultancy with 30+ years of experience in
             multidisciplinary projects in Pakistan and abroad.
           </motion.p>

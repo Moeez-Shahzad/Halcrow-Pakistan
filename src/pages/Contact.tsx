@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   Send,
   MessageCircle,
   Building,
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
 
   const offices = [
     {
-      name: "Islamabad Headquarters",
+      name: "Islamabad Office",
       address: "3rd Floor, Nawa-e-Waqt House, G-7/1 Mauve Area, Islamabad",
       phone: "+92 (51) 220 3451 - 55",
       email: "hpkmail@halcrowpk.com",
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
     },
     {
       icon: Users,
-      title: 'Joint Venture',
+      title: 'Partnering',
       description: 'Explore collaboration opportunities'
     },
     {
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               How Can We Help You?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Choose the best way to connect with our team
+              Contact us for
             </p>
           </div>
 
