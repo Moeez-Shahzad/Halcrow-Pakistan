@@ -24,8 +24,6 @@ const Contact: React.FC = () => {
     {
       name: "Islamabad Office",
       address: "3rd Floor, Nawa-e-Waqt House, G-7/1 Mauve Area, Islamabad",
-      phone: "+92 (51) 220 3451 - 55",
-      email: "hpkmail@halcrowpk.com",
       fax: "+92 (51) 220 3462",
       hours: "Mon - Fri: 9:00 AM - 6:00 PM",
       type: "headquarters",
@@ -74,7 +72,7 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-10 sm:py-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center"
@@ -267,20 +265,6 @@ const Contact: React.FC = () => {
                         <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-600 dark:text-gray-400">
                           {office.address}
-                        </span>
-                      </div>
-
-                      <div className="flex items-center">
-                        <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0" />
-                        <span className="text-gray-600 dark:text-gray-400">
-                          {office.phone}
-                        </span>
-                      </div>
-
-                      <div className="flex items-center">
-                        <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0" />
-                        <span className="text-gray-600 dark:text-gray-400">
-                          {office.email}
                         </span>
                       </div>
 

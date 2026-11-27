@@ -33,13 +33,17 @@ const Navbar: React.FC = () => {
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className={`flex justify-between items-center transition-all duration-300 ${
+          isScrolled ? 'h-16' : 'h-20'
+        }`}>
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 group">
             <img 
               src="/Halcrow.png" 
               alt="Halcrow Pakistan" 
-              className="h-10 w-auto"
+              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 filter drop-shadow-sm ${
+                isScrolled ? 'h-11 md:h-12' : 'h-12 sm:h-14 md:h-16'
+              }`}
             />
             {/* <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
               Halcrow Pakistan

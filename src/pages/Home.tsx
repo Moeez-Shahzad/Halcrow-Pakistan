@@ -15,6 +15,48 @@ import {
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
 
+const clients: { name: string; logo?: string; darkBackground?: boolean }[] = [
+  { name: 'The World Bank', logo: 'world-bank' },
+  { name: 'Asian Development Bank', logo: 'asian-development-bank' },
+  { name: 'JICA', logo: 'jica' },
+  { name: 'USAID', logo: 'usaid' },
+  { name: 'Mari Energies', logo: 'mari-energies' },
+  { name: 'Pakistan Petroleum Limited', logo: 'pakistan-petroleum' },
+  { name: 'Pakistan Oilfields Limited', logo: 'pakistan-oilfields' },
+  { name: 'Orient Petroleum', logo: 'orient-petroleum' },
+  { name: 'Dasu Hydropower Consultants' },
+  { name: 'Oil and Gas Development Company Limited', logo: 'ogdcl' },
+  { name: 'CDM Smith', logo: 'cdm-smith' },
+  { name: 'Mott MacDonald International', logo: 'mott-macdonald', darkBackground: true },
+  { name: 'Polish Oil and Gas Company (PGNiG)', logo: 'pgnig' },
+  { name: 'Emaar Pakistan', logo: 'emaar-pakistan' },
+  { name: 'IBA Karachi', logo: 'iba-karachi' },
+  { name: 'Forman Christian College, Lahore', logo: 'forman-christian-college' },
+  { name: 'Serena Hotels', logo: 'serena-hotels' },
+  { name: 'Aga Khan Education Services', logo: 'aga-khan-education-services' },
+];
+
+/* const clients = [
+  "The World Bank",
+  "Asian Development Bank",
+  "JICA",
+  "USAID",
+  "MARI Energies",
+  "Pakistan Petroleum Limited",
+  "Pakistan Oil Fields Limited",
+  "Orient Petroleum",
+  "DASU Hydropower Consultants",
+  "Oil and Gas Development Company Limited",
+  "CDM Smith",
+  "Mott McDonald International",
+  "Polish Oil and Gas Company",
+  "Emaar Pakistan",
+  "IBA Karachi",
+  "FC College Lahore",
+  "Serena Hotels",
+  "Agha Khan Education Services"
+]; */
+
 const Home: React.FC = () => {
   const services = [
     {
@@ -48,28 +90,6 @@ const Home: React.FC = () => {
     //   description: 'GIS, Oil & Gas, and Geotechnical consulting services.'
     // }
   ];
-
-  const clients = [
-    "The World Bank",
-    "Asian Development Bank",
-    "JICA",
-    "USAID",
-    "MARI Energies",
-    "Pakistan Petroleum Limited",
-    "Pakistan Oil Fields Limited",
-    "Orient Petroleum",
-    "DASU Hydropower Consultants",
-    "Oil and Gas Development Company Limited",
-    "CDM Smith",
-    "Mott McDonald International",
-    "Polish Oil and Gas Company",
-    "Emaar Pakistan",
-    "IBA Karachi",
-    "FC College Lahore",
-    "Serena Hotels",
-    "Agha Khan Education Services"
-  ];
-
 
   return (
     <div className="min-h-screen">
@@ -246,25 +266,26 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          {/* Scrolling Clients */}
-          <motion.div
-            className="flex space-x-16 text-lg font-medium text-gray-800 dark:text-gray-200"
-            animate={{ x: ["100%", "-100%"] }}
-            transition={{
-              repeat: Infinity,
-              duration: 30, // speed: higher = slower
-              ease: "linear",
-            }}
-          >
-            {[...clients, ...clients].map((client, index) => (
-              <span
-                key={index}
-                className="whitespace-nowrap bg-gray-50 dark:bg-gray-800 px-6 py-3 rounded-lg shadow"
+          <ul role="list" className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
+            {clients.map(({ name, logo, darkBackground }) => (
+              <li
+                key={name}
+                className={`flex h-24 items-center justify-center rounded-xl border border-gray-200 px-3 py-4 shadow-sm dark:border-gray-700 sm:h-28 sm:px-4 ${darkBackground ? 'bg-slate-900' : 'bg-white'}`}
               >
-                {client}
-              </span>
+                {logo ? (
+                  <img
+                    src={`${import.meta.env.BASE_URL}client-logos/${logo}.webp`}
+                    alt={name}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full max-w-40 object-contain"
+                  />
+                ) : (
+                  <span className="text-center text-sm font-semibold leading-snug text-gray-800">{name}</span>
+                )}
+              </li>
             ))}
-          </motion.div>
+          </ul>
         </div>
       </section>
 
